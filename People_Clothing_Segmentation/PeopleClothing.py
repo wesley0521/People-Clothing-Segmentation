@@ -144,7 +144,7 @@ conv9 = Conv2D(64, 3, activation = "relu", padding = "same", kernel_regularizer 
 conv9 = Conv2D(59, 1, activation = "softmax", padding = "same", kernel_initializer = "he_normal")(conv9)
 
 UNET = Model(inputs = inputs, outputs = conv9)
-UNET.summary()
+# UNET.summary()
 
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import LearningRateScheduler
